@@ -50,6 +50,26 @@ namespace LabsForTesting
                     listView.Items.Add(num.ToString());
                 }
             }
+
+            inputField.Clear();
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void startButton_Click(object sender, EventArgs e)
+        {
+            if(!maxRadioButton.Checked && !minRadioButton.Checked)
+            {
+                MessageBoxButtons btns = MessageBoxButtons.OK;
+                MessageBoxDefaultButton defBtn = MessageBoxDefaultButton.Button1;
+                string info = "Вы не выбрали, какой именно элемент хотите найти из введенных!";
+                MessageBoxIcon icon = MessageBoxIcon.Error;
+
+                MessageBox.Show(info, "ERROR", btns, icon, defBtn);
+            }
         }
     }
 }

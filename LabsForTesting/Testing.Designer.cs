@@ -40,6 +40,7 @@
             this.maxOrMinLbl = new System.Windows.Forms.Label();
             this.maxOrMin = new System.Windows.Forms.TextBox();
             this.exit = new System.Windows.Forms.Button();
+            this.restart = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // inputLabel
@@ -108,6 +109,7 @@
             this.startButton.TabIndex = 6;
             this.startButton.Text = "Запуск!";
             this.startButton.UseVisualStyleBackColor = true;
+            this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
             // elemCountLbl
             // 
@@ -139,6 +141,7 @@
             // 
             // maxOrMin
             // 
+            this.maxOrMin.Enabled = false;
             this.maxOrMin.Location = new System.Drawing.Point(20, 620);
             this.maxOrMin.Name = "maxOrMin";
             this.maxOrMin.Size = new System.Drawing.Size(303, 20);
@@ -146,18 +149,30 @@
             // 
             // exit
             // 
-            this.exit.Location = new System.Drawing.Point(20, 661);
+            this.exit.Location = new System.Drawing.Point(20, 702);
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(303, 34);
             this.exit.TabIndex = 11;
             this.exit.Text = "Выход";
             this.exit.UseVisualStyleBackColor = true;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
+            // 
+            // restart
+            // 
+            this.restart.Enabled = false;
+            this.restart.Location = new System.Drawing.Point(20, 658);
+            this.restart.Name = "restart";
+            this.restart.Size = new System.Drawing.Size(303, 38);
+            this.restart.TabIndex = 12;
+            this.restart.Text = "Рестарт";
+            this.restart.UseVisualStyleBackColor = true;
             // 
             // Testing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(354, 707);
+            this.ClientSize = new System.Drawing.Size(354, 748);
+            this.Controls.Add(this.restart);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.maxOrMin);
             this.Controls.Add(this.maxOrMinLbl);
@@ -191,6 +206,7 @@
         private System.Windows.Forms.Label maxOrMinLbl;
         private System.Windows.Forms.TextBox maxOrMin;
         private System.Windows.Forms.Button exit;
+        private System.Windows.Forms.Button restart;
     }
 }
 
