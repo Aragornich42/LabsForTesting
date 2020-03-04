@@ -1,0 +1,9 @@
+C:\Users\arago\YandexDisk\ДЛЯ ПРОГРАММИРОВАНИЯ\ТЕСТИКИ\LabsForTesting\LabsForTesting\bin\Debug\LabsForTesting.exe.config
+C:\Users\arago\YandexDisk\ДЛЯ ПРОГРАММИРОВАНИЯ\ТЕСТИКИ\LabsForTesting\LabsForTesting\bin\Debug\LabsForTesting.exe
+C:\Users\arago\YandexDisk\ДЛЯ ПРОГРАММИРОВАНИЯ\ТЕСТИКИ\LabsForTesting\LabsForTesting\bin\Debug\LabsForTesting.pdb
+C:\Users\arago\YandexDisk\ДЛЯ ПРОГРАММИРОВАНИЯ\ТЕСТИКИ\LabsForTesting\LabsForTesting\obj\Debug\LabsForTesting.csprojAssemblyReference.cache
+C:\Users\arago\YandexDisk\ДЛЯ ПРОГРАММИРОВАНИЯ\ТЕСТИКИ\LabsForTesting\LabsForTesting\obj\Debug\LabsForTesting.Properties.Resources.resources
+C:\Users\arago\YandexDisk\ДЛЯ ПРОГРАММИРОВАНИЯ\ТЕСТИКИ\LabsForTesting\LabsForTesting\obj\Debug\LabsForTesting.Testing.resources
+C:\Users\arago\YandexDisk\ДЛЯ ПРОГРАММИРОВАНИЯ\ТЕСТИКИ\LabsForTesting\LabsForTesting\obj\Debug\LabsForTesting.csproj.GenerateResource.cache
+C:\Users\arago\YandexDisk\ДЛЯ ПРОГРАММИРОВАНИЯ\ТЕСТИКИ\LabsForTesting\LabsForTesting\obj\Debug\LabsForTesting.exe
+C:\Users\arago\YandexDisk\ДЛЯ ПРОГРАММИРОВАНИЯ\ТЕСТИКИ\LabsForTesting\LabsForTesting\obj\Debug\LabsForTesting.pdb
