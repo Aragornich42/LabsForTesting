@@ -26,23 +26,13 @@ namespace LabsForTesting
 
             if (!int.TryParse(elem, out num))
             {
-                MessageBoxButtons btns = MessageBoxButtons.OK;
-                MessageBoxDefaultButton defBtn = MessageBoxDefaultButton.Button1;
-                string info = "Вы ввели невалидное значение!";
-                MessageBoxIcon icon = MessageBoxIcon.Error;
-
-                MessageBox.Show(info, "ERROR", btns, icon, defBtn);
+                CreateMessageBox("Вы ввели невалидное значение!");
             }
             else
             {
                 if (numbers.Count == 10)
                 {
-                    MessageBoxButtons btns = MessageBoxButtons.OK;
-                    MessageBoxDefaultButton defBtn = MessageBoxDefaultButton.Button1;
-                    string info = "Слишком много значений в массиве для оперирования данными!";
-                    MessageBoxIcon icon = MessageBoxIcon.Error;
-
-                    MessageBox.Show(info, "ERROR", btns, icon, defBtn);
+                    CreateMessageBox("Слишком много значений в массиве для оперирования данными!");
                 }
                 else
                 {
@@ -61,15 +51,59 @@ namespace LabsForTesting
 
         private void startButton_Click(object sender, EventArgs e)
         {
-            if(!maxRadioButton.Checked && !minRadioButton.Checked)
+            if (!maxRadioButton.Checked && !minRadioButton.Checked)
             {
-                MessageBoxButtons btns = MessageBoxButtons.OK;
-                MessageBoxDefaultButton defBtn = MessageBoxDefaultButton.Button1;
-                string info = "Вы не выбрали, какой именно элемент хотите найти из введенных!";
-                MessageBoxIcon icon = MessageBoxIcon.Error;
-
-                MessageBox.Show(info, "ERROR", btns, icon, defBtn);
+                CreateMessageBox("Вы не выбрали, какой именно элемент хотите найти из введенных!");
             }
+            else
+            {
+                if (listView.Items.Count == 0)
+                {
+                    CreateMessageBox("Вы не добавили ни один элемент!");
+                }
+                else
+                {
+                    var flag = maxRadioButton.Checked ?
+                        WhatFind.Max :
+                        WhatFind.Min;
+                    var count = Common.CountLessThen5BinaryUnits(numbers, out var findedNums);
+                    var maxOrMin = Common.GetMaxOrMin(findedNums, flag);
+
+                    elemCountField.Enabled = true;
+                    elemCountField.Text = count.ToString();
+
+                    maxOrMinField.Enabled = true;
+                    if (flag == WhatFind.Min)
+                        maxOrMinLbl.Text = "Минимальный:";
+                    maxOrMinField.Text = maxOrMin.ToString();
+
+                    restart.Enabled = true;
+                }
+            }
+        }
+
+        private void restart_Click(object sender, EventArgs e)
+        {
+            listView.Clear();
+            elemCountField.Enabled = false;
+            elemCountField.Clear();
+            maxOrMinField.Enabled = false;
+            maxOrMinField.Clear();
+            maxOrMinLbl.Text = "Максимальный:";
+            numbers.Clear();
+            restart.Enabled = false;
+        }
+
+        //КОММОНЫ
+
+        private void CreateMessageBox(string text)
+        {
+            MessageBoxButtons btns = MessageBoxButtons.OK;
+            MessageBoxDefaultButton defBtn = MessageBoxDefaultButton.Button1;
+            string info = text;
+            MessageBoxIcon icon = MessageBoxIcon.Error;
+
+            MessageBox.Show(info, "ERROR", btns, icon, defBtn);
         }
     }
 }

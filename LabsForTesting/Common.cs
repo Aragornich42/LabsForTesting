@@ -25,21 +25,31 @@ namespace LabsForTesting
                     copyList.First();
         }
 
-        public static int CountLessThen5BinaryUnits(List<int> nums)
+        public static int CountLessThen5BinaryUnits(List<int> nums, out List<int> finalNums)
         {
-            var binaries = ConvertToBinary(nums);
-            return binaries.Where(binary => IsLessThen5BinaryUnits(binary)).ToList().Count;
+            var binariesDict = ConvertToBinary(nums);
+            var finalDict = new Dictionary<int, string>();
+
+            foreach(int num in binariesDict.Keys)
+            {
+                if (IsLessThen5BinaryUnits(binariesDict[num]))
+                    finalDict.Add(num, binariesDict[num]);
+            }
+
+            finalNums = finalDict.Keys.ToList();
+            return finalDict.Count;
         }
 
-        private static List<string> ConvertToBinary(List<int> nums) 
-        { 
-            return nums.Select(num => Convert.ToString(num, 2)).ToList(); 
+        private static Dictionary<int, string> ConvertToBinary(List<int> nums)
+        {
+            return nums.ToDictionary(num => num, num => Convert.ToString(num, 2));
         }
         
 
         private static bool IsLessThen5BinaryUnits(string num)
         {
             return new Regex(@"(1)").Matches(num).Count < 5;
+            //return (num.Length - num.Replace("1", "").Length) < 5;
         }
 
     }

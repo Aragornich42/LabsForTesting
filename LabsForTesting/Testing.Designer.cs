@@ -38,7 +38,7 @@
             this.elemCountLbl = new System.Windows.Forms.Label();
             this.elemCountField = new System.Windows.Forms.TextBox();
             this.maxOrMinLbl = new System.Windows.Forms.Label();
-            this.maxOrMin = new System.Windows.Forms.TextBox();
+            this.maxOrMinField = new System.Windows.Forms.TextBox();
             this.exit = new System.Windows.Forms.Button();
             this.restart = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -139,13 +139,13 @@
             this.maxOrMinLbl.TabIndex = 9;
             this.maxOrMinLbl.Text = "Максимальный:";
             // 
-            // maxOrMin
+            // maxOrMinField
             // 
-            this.maxOrMin.Enabled = false;
-            this.maxOrMin.Location = new System.Drawing.Point(20, 620);
-            this.maxOrMin.Name = "maxOrMin";
-            this.maxOrMin.Size = new System.Drawing.Size(303, 20);
-            this.maxOrMin.TabIndex = 10;
+            this.maxOrMinField.Enabled = false;
+            this.maxOrMinField.Location = new System.Drawing.Point(20, 620);
+            this.maxOrMinField.Name = "maxOrMinField";
+            this.maxOrMinField.Size = new System.Drawing.Size(303, 20);
+            this.maxOrMinField.TabIndex = 10;
             // 
             // exit
             // 
@@ -166,6 +166,7 @@
             this.restart.TabIndex = 12;
             this.restart.Text = "Рестарт";
             this.restart.UseVisualStyleBackColor = true;
+            this.restart.Click += new System.EventHandler(this.restart_Click);
             // 
             // Testing
             // 
@@ -174,7 +175,7 @@
             this.ClientSize = new System.Drawing.Size(354, 748);
             this.Controls.Add(this.restart);
             this.Controls.Add(this.exit);
-            this.Controls.Add(this.maxOrMin);
+            this.Controls.Add(this.maxOrMinField);
             this.Controls.Add(this.maxOrMinLbl);
             this.Controls.Add(this.elemCountField);
             this.Controls.Add(this.elemCountLbl);
@@ -204,7 +205,7 @@
         private System.Windows.Forms.Label elemCountLbl;
         private System.Windows.Forms.TextBox elemCountField;
         private System.Windows.Forms.Label maxOrMinLbl;
-        private System.Windows.Forms.TextBox maxOrMin;
+        private System.Windows.Forms.TextBox maxOrMinField;
         private System.Windows.Forms.Button exit;
         private System.Windows.Forms.Button restart;
     }
