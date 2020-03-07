@@ -75,7 +75,10 @@ namespace LabsForTesting
                     maxOrMinField.Enabled = true;
                     if (flag == WhatFind.Min)
                         maxOrMinLbl.Text = "Минимальный:";
-                    maxOrMinField.Text = maxOrMin.ToString();
+                    if (maxOrMin != int.MaxValue)
+                        maxOrMinField.Text = maxOrMin.ToString();
+                    else
+                        maxOrMinField.Text = "none";
 
                     restart.Enabled = true;
                 }
