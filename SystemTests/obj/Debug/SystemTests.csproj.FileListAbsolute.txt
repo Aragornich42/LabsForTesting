@@ -1,0 +1,6 @@
+C:\Users\arago\YandexDisk\ДЛЯ ПРОГРАММИРОВАНИЯ\ТЕСТИКИ\LabsForTesting\SystemTests\bin\Debug\SystemTests.dll
+C:\Users\arago\YandexDisk\ДЛЯ ПРОГРАММИРОВАНИЯ\ТЕСТИКИ\LabsForTesting\SystemTests\bin\Debug\SystemTests.pdb
+C:\Users\arago\YandexDisk\ДЛЯ ПРОГРАММИРОВАНИЯ\ТЕСТИКИ\LabsForTesting\SystemTests\obj\Debug\SystemTests.csprojAssemblyReference.cache
+C:\Users\arago\YandexDisk\ДЛЯ ПРОГРАММИРОВАНИЯ\ТЕСТИКИ\LabsForTesting\SystemTests\obj\Debug\SystemTests.csproj.CoreCompileInputs.cache
+C:\Users\arago\YandexDisk\ДЛЯ ПРОГРАММИРОВАНИЯ\ТЕСТИКИ\LabsForTesting\SystemTests\obj\Debug\SystemTests.dll
+C:\Users\arago\YandexDisk\ДЛЯ ПРОГРАММИРОВАНИЯ\ТЕСТИКИ\LabsForTesting\SystemTests\obj\Debug\SystemTests.pdb

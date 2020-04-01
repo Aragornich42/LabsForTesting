@@ -7,3 +7,4 @@ C:\Users\arago\YandexDisk\ДЛЯ ПРОГРАММИРОВАНИЯ\ТЕСТИКИ
 C:\Users\arago\YandexDisk\ДЛЯ ПРОГРАММИРОВАНИЯ\ТЕСТИКИ\LabsForTesting\LabsForTesting\obj\Release\LabsForTesting.csproj.GenerateResource.cache
 C:\Users\arago\YandexDisk\ДЛЯ ПРОГРАММИРОВАНИЯ\ТЕСТИКИ\LabsForTesting\LabsForTesting\obj\Release\LabsForTesting.exe
 C:\Users\arago\YandexDisk\ДЛЯ ПРОГРАММИРОВАНИЯ\ТЕСТИКИ\LabsForTesting\LabsForTesting\obj\Release\LabsForTesting.pdb
+C:\Users\arago\YandexDisk\ДЛЯ ПРОГРАММИРОВАНИЯ\ТЕСТИКИ\LabsForTesting\LabsForTesting\obj\Release\LabsForTesting.csproj.CoreCompileInputs.cache

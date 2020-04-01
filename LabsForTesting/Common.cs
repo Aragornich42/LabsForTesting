@@ -27,22 +27,14 @@ namespace LabsForTesting
 
         public static int CountLessThen5BinaryUnits(List<int> nums, out List<int> finalNums)
         {
-            var binariesDict = ConvertToBinary(nums);
-            var finalDict = new Dictionary<int, string>();
-
-            foreach(int num in binariesDict.Keys)
-            {
-                if (IsLessThen5BinaryUnits(binariesDict[num]))
-                    finalDict.Add(num, binariesDict[num]);
-            }
-
-            finalNums = finalDict.Keys.ToList();
-            return finalDict.Count;
+            var interpretations = ConvertToBinary(nums);
+            finalNums = interpretations.Where(interp => IsLessThen5BinaryUnits(interp.Binary)).Select(interp => interp.Decimal).ToList();
+            return finalNums.Count;
         }
 
-        private static Dictionary<int, string> ConvertToBinary(List<int> nums)
+        private static List<NumberInterpretations> ConvertToBinary(List<int> nums)
         {
-            return nums.ToDictionary(num => num, num => Convert.ToString(num, 2));
+            return nums.Select(num => new NumberInterpretations { Decimal = num, Binary = Convert.ToString(num, 2) }).ToList();
         }
         
 
